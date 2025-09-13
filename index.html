@@ -1,12 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>AlbsMusic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlbsMusic 🎶</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #1db954;
+    }
+    .player {
+      margin-top: 30px;
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      display: inline-block;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .track {
+      margin: 15px 0;
+    }
+    button {
+      background: #1db954;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #17a94b;
+    }
+  </style>
 </head>
 <body>
   <h1>Bienvenue sur AlbsMusic 🎶</h1>
-  <p>Ton appli commence ici !</p>
+  <p>Ta petite appli de zik maison 🔥</p>
+
+  <div class="player">
+    <h2>Playlist</h2>
+
+    <div class="track">
+      <p>🎵 Chill Vibes</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas l'audio.
+      </audio>
+    </div>
+
+    <div class="track">
+      <p>🎵 Rap Beat</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas l'audio.
+      </audio>
+    </div>
+
+    <div class="track">
+      <p>🎵 Ambiance</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas l'audio.
+      </audio>
+    </div>
+  </div>
 </body>
 </html>
